@@ -39,7 +39,7 @@ const Home = () => {
                             </p>
                             <Link to='/register'> <button className="btn bg-sky-500 font-bold text-white mx-2">Get Started</button></Link>
 
-                            <button className="btn bg-emerald-500 font-bold text-black mx-2">Get Started</button>
+                            <button className="btn bg-emerald-500 font-bold text-white mx-2">Get Started</button>
                         </div>
                     </div>
                 </div>
