@@ -9,12 +9,14 @@ import TutorDetails from "../Pages/TutorDetails/TutorDetails";
 import AddTutorials from "../Pages/AddTutorials/AddTutorials";
 import MyTutorials from "../Pages/MyTutorials/MyTutorials";
 import MyBookedTutors from "../Pages/MyBookedTutors/MyBookedTutors";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: RootLayout,
+    errorElement: <ErrorPage></ErrorPage>  , 
     children: [
       {
         index: true,
@@ -22,6 +24,7 @@ const router = createBrowserRouter([
         hydrateFallbackElement: <div className="flex justify-center my-30">
           <span className="loading loading-spinner flex justify-center loading-xl"></span>
         </div>,
+        
       },
       {
         path:'/register',
@@ -33,7 +36,8 @@ const router = createBrowserRouter([
       },
        {
         path:'/find-tutors',
-        Component: FindTutor
+        Component: FindTutor,
+        loader: () => fetch("http://localhost:3000/tutors").then((res) => res.json()),
       },
        {
         path:'/find-tutors/:category',
@@ -45,7 +49,7 @@ const router = createBrowserRouter([
       },
        {
         path:'/add-tutorial',
-        Component: AddTutorials
+        Component:  AddTutorials
       },
        {
         path:'/my-tutorials',
