@@ -1,5 +1,5 @@
 import React, { use } from 'react';
-import { Link, useNavigate } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 
 import Swal from 'sweetalert2';
 import lottieLogIn from '../../assets/lotties/LogIn.json'
@@ -10,9 +10,12 @@ import Lottie from 'lottie-react';
 const Login = () => {
 
     const { googleSignIn, signIn , user } = use(AuthContext);
+     const location = useLocation();
+     const navigate = useNavigate();
+     const from = location.state || '/';
     console.log(user);
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -34,11 +37,11 @@ const Login = () => {
                         timer: 1500
                     });
 
-                    setTimeout(() => {
-                        navigate("/"); // or navigate("/") if your homepage is at root
-                    }, 1500);
+                    // setTimeout(() => {
+                    //     navigate('/'); // or navigate("/") if your homepage is at root
+                    // }, 1500);
                 }
-                // Navigate(location.state || "/home");
+                navigate(from);
             })
             .catch((error) => {
                 const errorCode = error.code;
