@@ -54,15 +54,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/add-tutorial',
-        Component: AddTutorials
+        element: <PrivetRoute><AddTutorials></AddTutorials></PrivetRoute>
       },
       {
         path: '/my-tutorials',
-        Component: MyTutorials
+        element: <PrivetRoute><MyTutorials></MyTutorials></PrivetRoute>,
+        loader: () => fetch("http://localhost:3000/tutorials").then((res) => res.json())
       },
       {
         path: '/my-booked-tutors',
-        Component: MyBookedTutors
+        element: <PrivetRoute><MyBookedTutors></MyBookedTutors></PrivetRoute>,
+        loader: () => fetch("http://localhost:3000/booked-tutors").then((res) => res.json()),
       },
     ]
   },
