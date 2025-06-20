@@ -11,6 +11,7 @@ import MyTutorials from "../Pages/MyTutorials/MyTutorials";
 import MyBookedTutors from "../Pages/MyBookedTutors/MyBookedTutors";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import PrivetRoute from "../Routes/PrivetRoute";
+import UpdateTutorial from "../Pages/MyTutorials/UpdateTutorial";
 
 
 const router = createBrowserRouter([
@@ -65,6 +66,11 @@ const router = createBrowserRouter([
         path: '/my-booked-tutors',
         element: <PrivetRoute><MyBookedTutors></MyBookedTutors></PrivetRoute>,
         loader: () => fetch("http://localhost:3000/booked-tutors").then((res) => res.json()),
+      },
+      {
+        path: '/updateTutorial',
+        element: <PrivetRoute><UpdateTutorial></UpdateTutorial></PrivetRoute>,
+        // loader: () => fetch("http://localhost:3000/booked-tutors").then((res) => res.json()),
       },
     ]
   },
