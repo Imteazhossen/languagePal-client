@@ -40,7 +40,7 @@ const Navbar = () => {
             </svg>
           </div>
 
-        
+
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content z-10 mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
@@ -108,7 +108,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-     
+
         <Link to="/" className="btn btn-ghost text-lg md:text-xl -ml-5 text-sky-500">
           LanguagePal <FaAmericanSignLanguageInterpreting size={30} />
         </Link>
@@ -179,13 +179,14 @@ const Navbar = () => {
         </ul>
       </div>
 
-      
+
       <div className="navbar-end gap-2">
         {/* Profile image */}
         <img
-          className="h-10 w-10 rounded-full object-cover"
-          src={user ? user.photoURL : userLogo}
-          alt="user-avatar"
+          src={user?.photoURL || userLogo}
+          alt="profile"
+          title={user?.displayName || 'User'}  
+          className="h-10 w-10 rounded-full object-cover border-2 border-sky-500"
         />
 
         {user ? (

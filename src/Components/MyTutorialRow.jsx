@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 import Swal from 'sweetalert2';
 
-const MyTutorialRow = ({ t }) => {
+const MyTutorialRow = ({ t , ftutorials, setTutorials }) => {
     const { _id } = t;
-    console.log(_id);
+
 
     const handleDelete = (_id) => {
         console.log(_id);
@@ -35,6 +35,9 @@ const MyTutorialRow = ({ t }) => {
                                 text: "Your file has been deleted.",
                                 icon: "success"
                             });
+
+                            const updated = ftutorials.filter(item => item._id !== _id);
+                            setTutorials(updated);
                         }
                     })
 
@@ -55,7 +58,7 @@ const MyTutorialRow = ({ t }) => {
             <td className="max-w-xs truncate">{t.description}</td>
             <td>{t.review}</td>
             <td className="flex flex-col md:flex-row gap-2 mt-2">
-                <Link to={`/updateTutorial`}>
+                <Link to={`/updateTutorial/${_id}`}>
                     <button className="btn btn-sm bg-emerald-500 text-white hover:bg-emerald-600">
                         Update
                     </button>

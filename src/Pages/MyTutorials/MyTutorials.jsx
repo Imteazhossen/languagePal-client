@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { Link, useLoaderData } from 'react-router';
 import { AuthContext } from '../../Context/AuthContext/AuthContext';
 import MyTutorialRow from '../../Components/MyTutorialRow';
@@ -6,7 +6,9 @@ import MyTutorialRow from '../../Components/MyTutorialRow';
 const MyTutorials = () => {
     const tutorials = useLoaderData();
     const {user} = use(AuthContext);
-    const filteredTutorials = tutorials.filter(tutorial => user.email  == tutorial.email)
+   
+    const filteredTutorials = tutorials.filter(tutorial => user.email  == tutorial.email);
+     const [ftutorials, setTutorials] = useState(filteredTutorials);
 
    return (
     <div className="min-h-screen bg-white p-5">
@@ -32,8 +34,8 @@ const MyTutorials = () => {
               </tr>
             </thead>
             <tbody>
-              {filteredTutorials.map(t => 
-                <MyTutorialRow t={t}></MyTutorialRow>
+              {ftutorials.map(t => 
+                <MyTutorialRow ftutorials={ftutorials} setTutorials={setTutorials} t={t}></MyTutorialRow>
                
               )}
             </tbody>

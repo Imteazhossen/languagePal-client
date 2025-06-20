@@ -68,9 +68,9 @@ const router = createBrowserRouter([
         loader: () => fetch("http://localhost:3000/booked-tutors").then((res) => res.json()),
       },
       {
-        path: '/updateTutorial',
+        path: '/updateTutorial/:id',
         element: <PrivetRoute><UpdateTutorial></UpdateTutorial></PrivetRoute>,
-        // loader: () => fetch("http://localhost:3000/booked-tutors").then((res) => res.json()),
+        loader: ({params}) => fetch(`http://localhost:3000/tutorials/${params.id}`).then((res) => res.json()),
       },
     ]
   },
