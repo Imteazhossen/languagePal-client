@@ -51,116 +51,132 @@ const Home = () => {
             {/* category section */}
             <h1 className="text-5xl font-bold  text-sky-500 text-center my-20">Explore Language Categories</h1>
             <div className='grid grid-cols-1 md:px-20  my-20 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-
-                <div className='bg-white  rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
-                    <div className="">
-                        <img className='w-16 h-16  border rounded-full' src={bangladesh} alt="" />
+                <Link to='/find-tutors/bangla'>
+                    <div className='bg-white  rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                        <div className="">
+                            <img className='w-16 h-16  border rounded-full' src={bangladesh} alt="" />
+                        </div>
+                        <div className="">
+                            <h1 className='text-2xl font-bold '>Bangladeshi Tutor</h1>
+                            <p className='text-gray-600'>Trusted and Reliable</p>
+                        </div>
+                        <div className='animate-bounce pt-5'>
+                            <IoIosArrowDropright size={60} />
+                        </div>
                     </div>
-                    <div className="">
-                        <h1 className='text-2xl font-bold '>Bangladeshi Tutor</h1>
-                        <p className='text-gray-600'>Trusted and Reliable</p>
+                </Link>
+                <Link to='/find-tutors/urdu'>
+                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                        <div className="">
+                            <img className='w-16 h-16  border rounded-full' src={pakistan} alt="" />
+                        </div>
+                        <div className="">
+                            <h1 className='text-2xl font-bold '>Pakistan Tutor</h1>
+                            <p className='text-gray-600'>Trusted and Reliable</p>
+                        </div>
+                        <div className='animate-bounce pt-5'>
+                            <IoIosArrowDropright size={60} />
+                        </div>
                     </div>
-                    <div className='animate-bounce pt-5'>
-                        <IoIosArrowDropright size={60} />
+                </Link>
+                <Link to='/find-tutors/german'>
+                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                        <div className="">
+                            <img className='w-16 h-16  border rounded-full' src={german} alt="" />
+                        </div>
+                        <div className="">
+                            <h1 className='text-2xl font-bold '>German Tutor</h1>
+                            <p className='text-gray-600'>Trusted and Reliable</p>
+                        </div>
+                        <div className='animate-bounce pt-5'>
+                            <IoIosArrowDropright size={60} />
+                        </div>
                     </div>
-                </div>
-                <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
-                    <div className="">
-                        <img className='w-16 h-16  border rounded-full' src={pakistan} alt="" />
+                </Link>
+                <Link to='/find-tutors/arabic'>
+                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                        <div className="">
+                            <img className='w-16 h-16  border rounded-full' src={palestine} alt="" />
+                        </div>
+                        <div className="">
+                            <h1 className='text-2xl font-bold '>Palestine Tutor</h1>
+                            <p className='text-gray-600'>Trusted and Reliable</p>
+                        </div>
+                        <div className='animate-bounce pt-5'>
+                            <IoIosArrowDropright size={60} />
+                        </div>
                     </div>
-                    <div className="">
-                        <h1 className='text-2xl font-bold '>Pakistani Tutor</h1>
-                        <p className='text-gray-600'>Trusted and Reliable</p>
+                </Link>
+                <Link to='/find-tutors/chinese'>
+                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                        <div className="">
+                            <img className='w-16 h-16  border rounded-full' src={china} alt="" />
+                        </div>
+                        <div className="">
+                            <h1 className='text-2xl font-bold '>Chinese Tutor</h1>
+                            <p className='text-gray-600'>Trusted and Reliable</p>
+                        </div>
+                        <div className='animate-bounce pt-5'>
+                            <IoIosArrowDropright size={60} />
+                        </div>
                     </div>
-                    <div className='animate-bounce pt-5'>
-                        <IoIosArrowDropright size={60} />
+                </Link>
+                <Link to='/find-tutors/japanese'>
+                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                        <div className="">
+                            <img className='w-16 h-16  border rounded-full' src={japan} alt="" />
+                        </div>
+                        <div className="">
+                            <h1 className='text-2xl font-bold '>Japanese Tutor</h1>
+                            <p className='text-gray-600'>Trusted and Reliable</p>
+                        </div>
+                        <div className='animate-bounce pt-5'>
+                            <IoIosArrowDropright size={60} />
+                        </div>
                     </div>
-                </div>
-                <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
-                    <div className="">
-                        <img className='w-16 h-16  border rounded-full' src={german} alt="" />
+                </Link>
+                <Link to='/find-tutors/spanish'>
+                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                        <div className="">
+                            <img className='w-16 h-16  border rounded-full' src={spain} alt="" />
+                        </div>
+                        <div className="">
+                            <h1 className='text-2xl font-bold '>Spanish Tutor</h1>
+                            <p className='text-gray-600'>Trusted and Reliable</p>
+                        </div>
+                        <div className='animate-bounce pt-5'>
+                            <IoIosArrowDropright size={60} />
+                        </div>
                     </div>
-                    <div className="">
-                        <h1 className='text-2xl font-bold '>German Tutor</h1>
-                        <p className='text-gray-600'>Trusted and Reliable</p>
+                </Link>
+                <Link to='/find-tutors/english'>
+                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                        <div className="">
+                            <img className='w-16 h-16  border rounded-full' src={usa} alt="" />
+                        </div>
+                        <div className="">
+                            <h1 className='text-2xl font-bold '>English Tutor</h1>
+                            <p className='text-gray-600'>Trusted and Reliable</p>
+                        </div>
+                        <div className='animate-bounce pt-5'>
+                            <IoIosArrowDropright size={60} />
+                        </div>
                     </div>
-                    <div className='animate-bounce pt-5'>
-                        <IoIosArrowDropright size={60} />
+                </Link>
+                <Link to='/find-tutors/italian'>
+                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                        <div className="">
+                            <img className='w-16 h-16  border rounded-full' src={italy} alt="" />
+                        </div>
+                        <div className="">
+                            <h1 className='text-2xl font-bold '>Italian Tutor</h1>
+                            <p className='text-gray-600'>Trusted and Reliable</p>
+                        </div>
+                        <div className='animate-bounce pt-5'>
+                            <IoIosArrowDropright size={60} />
+                        </div>
                     </div>
-                </div>
-                <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
-                    <div className="">
-                        <img className='w-16 h-16  border rounded-full' src={palestine} alt="" />
-                    </div>
-                    <div className="">
-                        <h1 className='text-2xl font-bold '>Palestine Tutor</h1>
-                        <p className='text-gray-600'>Trusted and Reliable</p>
-                    </div>
-                    <div className='animate-bounce pt-5'>
-                        <IoIosArrowDropright size={60} />
-                    </div>
-                </div>
-                <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
-                    <div className="">
-                        <img className='w-16 h-16  border rounded-full' src={china} alt="" />
-                    </div>
-                    <div className="">
-                        <h1 className='text-2xl font-bold '>Chinese Tutor</h1>
-                        <p className='text-gray-600'>Trusted and Reliable</p>
-                    </div>
-                    <div className='animate-bounce pt-5'>
-                        <IoIosArrowDropright size={60} />
-                    </div>
-                </div>
-                <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
-                    <div className="">
-                        <img className='w-16 h-16  border rounded-full' src={japan} alt="" />
-                    </div>
-                    <div className="">
-                        <h1 className='text-2xl font-bold '>Japanese Tutor</h1>
-                        <p className='text-gray-600'>Trusted and Reliable</p>
-                    </div>
-                    <div className='animate-bounce pt-5'>
-                        <IoIosArrowDropright size={60} />
-                    </div>
-                </div>
-                <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
-                    <div className="">
-                        <img className='w-16 h-16  border rounded-full' src={spain} alt="" />
-                    </div>
-                    <div className="">
-                        <h1 className='text-2xl font-bold '>Spanish Tutor</h1>
-                        <p className='text-gray-600'>Trusted and Reliable</p>
-                    </div>
-                    <div className='animate-bounce pt-5'>
-                        <IoIosArrowDropright size={60} />
-                    </div>
-                </div>
-                <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
-                    <div className="">
-                        <img className='w-16 h-16  border rounded-full' src={usa} alt="" />
-                    </div>
-                    <div className="">
-                        <h1 className='text-2xl font-bold '>English Tutor</h1>
-                        <p className='text-gray-600'>Trusted and Reliable</p>
-                    </div>
-                    <div className='animate-bounce pt-5'>
-                        <IoIosArrowDropright size={60} />
-                    </div>
-                </div>
-                <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
-                    <div className="">
-                        <img className='w-16 h-16  border rounded-full' src={italy} alt="" />
-                    </div>
-                    <div className="">
-                        <h1 className='text-2xl font-bold '>Italian Tutor</h1>
-                        <p className='text-gray-600'>Trusted and Reliable</p>
-                    </div>
-                    <div className='animate-bounce pt-5'>
-                        <IoIosArrowDropright size={60} />
-                    </div>
-                </div>
-
+                </Link>
             </div>
             {/* extra section 1 */}
 
@@ -197,7 +213,7 @@ const Home = () => {
                         Group Package
                     </h1>
                     <p className="text-gray-600 leading-relaxed">
-                       Purchasing group packages for language learning can be a cost-effective way for friends, families, or teams to learn together. These packages often include discounts, shared access to premium resources, and opportunities for collaborative learning, making the experience more engaging and supportive.
+                        Purchasing group packages for language learning can be a cost-effective way for friends, families, or teams to learn together. These packages often include discounts, shared access to premium resources, and opportunities for collaborative learning, making the experience more engaging and supportive.
 
 
                     </p>

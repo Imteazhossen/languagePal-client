@@ -12,6 +12,7 @@ import MyBookedTutors from "../Pages/MyBookedTutors/MyBookedTutors";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import PrivetRoute from "../Routes/PrivetRoute";
 import UpdateTutorial from "../Pages/MyTutorials/UpdateTutorial";
+import CategoryTutors from "../Pages/CategoryTutors/CategoryTutors";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         path: '/login',
         Component: Login
       },
+      // {
+      //   path: '/find-tutors/:category ',
+      //   element: <CategoryTutors></CategoryTutors>,
+      // },
       {
         path: '/find-tutors',
         Component: FindTutor,
@@ -70,8 +75,9 @@ const router = createBrowserRouter([
       {
         path: '/updateTutorial/:id',
         element: <PrivetRoute><UpdateTutorial></UpdateTutorial></PrivetRoute>,
-        loader: ({params}) => fetch(`http://localhost:3000/tutorials/${params.id}`).then((res) => res.json()),
+        loader: ({ params }) => fetch(`http://localhost:3000/tutorials/${params.id}`).then((res) => res.json()),
       },
+
     ]
   },
 ]);
