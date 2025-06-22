@@ -19,7 +19,9 @@ const TutorDetails = () => {
     }
 
     const {
-        _id, image, language, price, tutorEmail, description, rating, } = tutor;
+        _id, image, language, price, tutorEmail, tutorName, description, rating, } = tutor;
+
+   
 
     const handleBookTutor = () => {
         if (!user) {
@@ -38,6 +40,8 @@ const TutorDetails = () => {
             price,
             tutorEmail,
             email: user.email,
+            tutorName,
+            rating
         };
 
         fetch('http://localhost:3000/booked-tutors', {
@@ -75,14 +79,23 @@ const TutorDetails = () => {
                     <p>
                         <span className="font-semibold">Price:</span> ${price} / session
                     </p>
+                     <p>
+                        <span className="font-semibold">Tutor Name:</span> {tutorName}
+                    </p>
                     <p>
                         <span className="font-semibold">Tutor Email:</span> {tutorEmail}
                     </p>
-                    <p>
-                        <span className="font-semibold">Rating:</span> <FaRegStar /> {rating}
+                   
+                    <p className="flex items-center gap-2">
+                        
+                        <span className="font-semibold">Review:</span> {rating}
                     </p>
                 </div>
-                {user ? ( <button onClick={handleBookTutor} className="btn bg-sky-500 text-white hover:bg-sky-600">Book This Tutor</button>) : ( <p className="text-red-500">Please login to book a tutor.</p> )}
+                 <button onClick={handleBookTutor} className="btn bg-sky-500 text-white hover:bg-sky-600">Book This Tutor</button>
+                 <div className=" text-gray-500">
+                    <p>User Email: {user.email}</p>
+                   <p >Tutor Id: {_id}</p> 
+                    </div> 
             </div>
         </div>
     );

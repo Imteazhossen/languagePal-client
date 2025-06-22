@@ -20,7 +20,9 @@ const FindTutorCategory = () => {
     }, [category]);
 
     if (loading) {
-        return <p className="text-center mt-10">Loading...</p>;
+        return <div className="flex justify-center my-30">
+          <span className="loading loading-spinner flex justify-center loading-xl"></span>
+        </div>
     }
     return (
         <div className="p-6">

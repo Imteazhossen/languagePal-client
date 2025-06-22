@@ -10,14 +10,15 @@ const TutorCard = ({ tutor }) => {
         price,
         tutorEmail,
         email,
-        _id
+        _id,
+        tutorName
     } = tutor;
 
     return (
         <div className="card md:flex-row flex-col bg-white shadow-md hover:shadow-lg p-4 md:p-6 rounded-lg mx-auto">
             {/* Image */}
             <div className="w-full md:w-48 flex-shrink-0 mx-auto">
-                <img src={image} alt={language + " tutor"} className="rounded-md object-cover h-full w-full" />
+                <img src={image}  className="rounded-md object-cover h-full w-full" />
             </div>
 
             {/* Details */}
@@ -25,7 +26,7 @@ const TutorCard = ({ tutor }) => {
                 <div className="flex items-center justify-between">
                     <h2 className="text-2xl font-semibold text-gray-700 capitalize">{language} Tutor</h2>
                 </div>
-
+                 <p className="text-sm text-gray-500">Name: {tutorName}</p>
                 <p className="text-sm text-gray-500"><MdEmail className="inline mr-1 text-sky-500" /> {tutorEmail}</p>
                 <p className="text-sm text-gray-500">User Email: {email}</p>
 
