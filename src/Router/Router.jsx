@@ -44,10 +44,6 @@ const router = createBrowserRouter([
       {
         path: '/find-tutors',
         Component: FindTutor,
-        loader: () => fetch("http://localhost:3000/tutors").then((res) => res.json()),
-        hydrateFallbackElement: <div className="flex justify-center my-30">
-          <span className="loading loading-spinner flex justify-center loading-xl"></span>
-        </div>,
       },
       {
         path: '/find-tutors/:category',
