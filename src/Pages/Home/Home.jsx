@@ -52,7 +52,7 @@ const Home = () => {
             <h1 className="text-5xl font-bold  text-sky-500 text-center my-20">Explore Language Categories</h1>
             <div className='grid grid-cols-1 md:px-20  my-20 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 <Link to='/find-tutors/bangla'>
-                    <div className='bg-white  rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                    <div className='bg-base-100  rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
                         <div className="">
                             <img className='w-16 h-16  border rounded-full' src={bangladesh} alt="" />
                         </div>
@@ -66,7 +66,7 @@ const Home = () => {
                     </div>
                 </Link>
                 <Link to='/find-tutors/urdu'>
-                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                    <div className='bg-base-100 rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
                         <div className="">
                             <img className='w-16 h-16  border rounded-full' src={pakistan} alt="" />
                         </div>
@@ -80,7 +80,7 @@ const Home = () => {
                     </div>
                 </Link>
                 <Link to='/find-tutors/german'>
-                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                    <div className='bg-base-100 rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
                         <div className="">
                             <img className='w-16 h-16  border rounded-full' src={german} alt="" />
                         </div>
@@ -94,7 +94,7 @@ const Home = () => {
                     </div>
                 </Link>
                 <Link to='/find-tutors/arabic'>
-                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                    <div className='bg-base-100 rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
                         <div className="">
                             <img className='w-16 h-16  border rounded-full' src={palestine} alt="" />
                         </div>
@@ -108,7 +108,7 @@ const Home = () => {
                     </div>
                 </Link>
                 <Link to='/find-tutors/chinese'>
-                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                    <div className='bg-base-100 rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
                         <div className="">
                             <img className='w-16 h-16  border rounded-full' src={china} alt="" />
                         </div>
@@ -122,7 +122,7 @@ const Home = () => {
                     </div>
                 </Link>
                 <Link to='/find-tutors/japanese'>
-                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                    <div className='bg-base-100 rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
                         <div className="">
                             <img className='w-16 h-16  border rounded-full' src={japan} alt="" />
                         </div>
@@ -136,7 +136,7 @@ const Home = () => {
                     </div>
                 </Link>
                 <Link to='/find-tutors/spanish'>
-                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                    <div className='bg-base-100 rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
                         <div className="">
                             <img className='w-16 h-16  border rounded-full' src={spain} alt="" />
                         </div>
@@ -150,7 +150,7 @@ const Home = () => {
                     </div>
                 </Link>
                 <Link to='/find-tutors/english'>
-                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                    <div className='bg-base-100 rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
                         <div className="">
                             <img className='w-16 h-16  border rounded-full' src={usa} alt="" />
                         </div>
@@ -164,7 +164,7 @@ const Home = () => {
                     </div>
                 </Link>
                 <Link to='/find-tutors/italian'>
-                    <div className='bg-white rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
+                    <div className='bg-base-100 rounded-lg flex hover:bg-emerald-100 justify-around gap-2 p-5 shadow-lg'>
                         <div className="">
                             <img className='w-16 h-16  border rounded-full' src={italy} alt="" />
                         </div>

@@ -9,6 +9,8 @@ import { Link, NavLink } from 'react-router';
 // import { Tooltip as ReactTooltip } from 'react-tooltip';
 
 const Navbar = () => {
+
+  
   const { user, logOut } = useContext(AuthContext);
 
   const handleLogout = () => {
@@ -181,6 +183,22 @@ const Navbar = () => {
 
 
       <div className="navbar-end gap-2">
+         <label className="swap swap-rotate">
+                    <input
+                        type="checkbox"
+                        onChange={(e) => {
+                            if (e.target.checked) {
+                                document.documentElement.setAttribute('data-theme', 'dark');
+                            } else {
+                                document.documentElement.setAttribute('data-theme', 'light');
+                            }
+                        }}
+                        className="toggle outline border-black bg-base-200
+                        [--tglbg:var(--color-sky-500)] 
+                            checked: border-black checked:bg-blue-400 
+                          checked:[--tglbg:var(--color-blue-900)]"
+                    />
+                </label>
         {/* Profile image */}
         <img
           src={user?.photoURL || userLogo}

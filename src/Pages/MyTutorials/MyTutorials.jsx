@@ -11,7 +11,7 @@ const MyTutorials = () => {
      const [ftutorials, setTutorials] = useState(filteredTutorials);
 
    return (
-    <div className="min-h-screen bg-white p-5">
+    <div className="min-h-screen bg-base-100 p-5">
       <h2 className="mb-6 text-center text-3xl font-bold text-sky-500">
         My Tutorials
       </h2>
@@ -22,7 +22,7 @@ const MyTutorials = () => {
         </p>
       ) : (
         <div className="overflow-x-auto">
-          <table className="table w-full bg-white shadow-lg">
+          <table className="table w-full bg-base-100 shadow-lg">
             <thead className="bg-sky-500 text-white">
               <tr>
                 <th>Image</th>

@@ -33,7 +33,7 @@ const CategoryTutors = () => {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {tutors.map((tutor) => (
-            <div key={tutor._id} className="bg-white shadow p-5 rounded-lg">
+            <div key={tutor._id} className="bg-base-100 shadow p-5 rounded-lg">
               <img src={tutor.image} alt={tutor.name} className="w-full h-40 object-cover rounded" />
               <h3 className="text-xl font-semibold mt-3">{tutor.name}</h3>
               <p><strong>Language:</strong> {tutor.language}</p>

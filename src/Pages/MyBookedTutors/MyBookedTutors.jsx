@@ -50,7 +50,7 @@ const MyBookedTutors = () => {
 
 
   return (
-    <div className="min-h-screen bg-white p-5">
+    <div className="min-h-screen bg-base-100 p-5">
       <h2 className="text-3xl font-bold text-sky-500 text-center mb-6">
         My Booked Tutors
       </h2>
@@ -72,7 +72,7 @@ const MyBookedTutors = () => {
             </thead>
             <tbody>
               {myTutors.map((tutor, index) => (
-                <tr key={tutor._id} className="bg-white">
+                <tr key={tutor._id} className="bg-base-100">
                   <td>
                     <img
                       src={tutor.image}

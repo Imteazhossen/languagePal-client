@@ -52,7 +52,7 @@ const UpdateTutorial = () => {
     };
 
     return (
-        <div className="min-h-screen bg-white p-5 flex justify-center items-center">
+        <div className="min-h-screen bg-base-100 p-5 flex justify-center items-center">
             <div className="w-full max-w-3xl bg-emerald-50 my-10 shadow-xl p-10 rounded-xl">
                 <h2 className="text-3xl font-bold text-sky-500 text-center mb-6">Update Your Tutorial</h2>
                 <form onSubmit={handleSubmit} className="space-y-5">

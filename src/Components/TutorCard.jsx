@@ -15,7 +15,7 @@ const TutorCard = ({ tutor }) => {
     } = tutor;
 
     return (
-        <div className="card md:flex-row flex-col bg-white shadow-md hover:shadow-lg p-4 md:p-6 rounded-lg mx-auto">
+        <div className="card md:flex-row flex-col bg-base-100 shadow-md hover:shadow-lg p-4 md:p-6 rounded-lg mx-auto">
             {/* Image */}
             <div className="w-full md:w-48 flex-shrink-0 mx-auto">
                 <img src={image}  className="rounded-md object-cover h-full w-full" />

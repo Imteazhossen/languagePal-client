@@ -5,9 +5,9 @@ import Footer from '../Shared/Footer';
 
 const RootLayout = () => {
     return (
-        <div>
+        <div className="min-h-screen bg-base-100 text-base-content">
             <Navbar></Navbar>
-            <div className="bg-white">
+            <div className="bg-base-100">
                 <Outlet></Outlet>
             </div>
 

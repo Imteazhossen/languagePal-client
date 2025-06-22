@@ -4,7 +4,7 @@ import bangladesh from '../assets/countries/bangladesh.png'
 
 const CategoryCard = () => {
     return (
-        <div className='bg-white rounded-lg flex justify-between gap-2 p-5 shadow-lg'>
+        <div className='bg-base-100 rounded-lg flex justify-between gap-2 p-5 shadow-lg'>
            <div className="">
             <img src={bangladesh} alt="" />
 

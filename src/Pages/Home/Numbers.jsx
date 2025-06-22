@@ -11,22 +11,22 @@ const Numbers = () => {
             <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-10 md:px-25 py-10'>
               <div className="rounded-2xl h-[140px] flex flex-col justify-center items-center  bg-emerald-100 p-5" >
                 
-                <h1 className='text-left text-5xl  md:text-6xl font-bold'><CountUp end={199}  duration={20}></CountUp>+</h1>
+                <h1 className='text-left text-5xl  md:text-6xl font-bold'><CountUp end={10}  duration={20}></CountUp>+</h1>
                 <p className='mt-5 text-left text-gray-500 font-semibold'>Experienced tutors</p>
               </div>
               <div className="rounded-2xl h-[140px]  flex flex-col justify-center items-center bg-sky-100 p-5" >
                 
-                <h1 className='text-left  text-5xl md:text-6xl font-bold'><CountUp end={467}  duration={20}></CountUp>+</h1>
-                <p className='mt-5 text-left text-gray-500 font-semibold'>5-star tutor reviews</p>
+                <h1 className='text-left  text-5xl md:text-6xl font-bold'><CountUp end={105}  duration={20}></CountUp>+</h1>
+                <p className='mt-5 text-left text-gray-500 font-semibold'>Tutor reviews</p>
               </div>
               <div className="rounded-2xl h-[140px] flex flex-col justify-center items-center bg-emerald-100 p-5" >
              
-                <h1 className='text-left text-5xl md:text-6xl font-bold'><CountUp end={1900}  duration={20}></CountUp>+</h1>
+                <h1 className='text-left text-5xl md:text-6xl font-bold'><CountUp end={8}  duration={20}></CountUp>+</h1>
                 <p className='mt-5 text-left text-gray-500 font-semibold'>Subjects taught</p>
               </div>
               <div className="rounded-2xl h-[140px] flex flex-col justify-center items-center  bg-sky-100 p-5" >
                
-                <h1 className='text-left text-5xl md:text-6xl font-bold'><CountUp end={300}  duration={20}></CountUp>+</h1>
+                <h1 className='text-left text-5xl md:text-6xl font-bold'><CountUp end={8}  duration={20}></CountUp>+</h1>
                 <p className='mt-5 text-left text-gray-500 font-semibold'>Tutor nationalities</p>
               </div>
             </div>
