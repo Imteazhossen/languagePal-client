@@ -7,7 +7,7 @@ const MyTutorialRow = ({ t , ftutorials, setTutorials }) => {
 
 
     const handleDelete = (_id) => {
-        console.log(_id);
+        // console.log(_id);
 
         Swal.fire({
             title: "Are you sure?",
@@ -18,7 +18,7 @@ const MyTutorialRow = ({ t , ftutorials, setTutorials }) => {
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
-            console.log(result.isConfirmed);
+            // console.log(result.isConfirmed);
             if (result.isConfirmed) {
 
                 //start deleting the tutorial

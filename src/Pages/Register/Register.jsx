@@ -40,7 +40,7 @@ const Register = () => {
             .then(result => {
                 if (result.user) {
                     const user = result.user;
-                    console.log(user);
+                    // console.log(user);
                     setUser(user);
 
                     updateUser({ photoURL: photo })
@@ -111,7 +111,7 @@ const Register = () => {
                                 <input type="password" name='password' className="input w-full" placeholder="Password" />
                                 <label className="label">Photo URL</label>
                                 <input type="link" name='photo_url' className="input w-full" placeholder="Photo URL" />
-                                <div>Already Have an Account? Please <Link className="link link-hover text-blue-700">Login</Link></div>
+                                <div>Already Have an Account? Please <Link to='/login' className="link link-hover text-blue-700">Login</Link></div>
                                 <button className="btn bg-sky-500 mt-4">Create Account</button>
                             </form>
                           

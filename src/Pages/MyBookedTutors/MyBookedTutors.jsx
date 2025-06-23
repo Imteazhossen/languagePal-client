@@ -8,8 +8,8 @@ const MyBookedTutors = () => {
   const { user } = useContext(AuthContext);
   const bookedTutors = useLoaderData()
   const filteredBookedTutors = bookedTutors.filter(tutor => user.email == tutor.email);
-  console.log(filteredBookedTutors);
-  console.log(bookedTutors);
+  // console.log(filteredBookedTutors);
+  // console.log(bookedTutors);
 
   // const filtered = bookedTutors.filter((t) => t.email === user.email);
   const [myTutors, setMyTutors] = useState(filteredBookedTutors);

@@ -24,7 +24,7 @@ const UpdateTutorial = () => {
             createdAt: new Date()
         };
 
-        console.log(tutorialData);
+        // console.log(tutorialData);
 
 
         fetch(`http://localhost:3000/tutorials/${_id}`, {

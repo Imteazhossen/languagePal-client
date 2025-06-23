@@ -13,7 +13,7 @@ const Login = () => {
      const location = useLocation();
      const navigate = useNavigate();
      const from = location.state || '/';
-    console.log(user);
+    // console.log(user);
 
     // const navigate = useNavigate();
 
