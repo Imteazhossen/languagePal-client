@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         index: true,
         Component: Home,
         hydrateFallbackElement: <div className="flex justify-center my-30">
-          <span className="loading loading-spinner flex justify-center loading-xl"></span>
+          <span className="loading loading-spinner text-info flex justify-center loading-xl"></span>
         </div>,
 
       },
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         path: '/find-tutors',
         Component: FindTutor,
         hydrateFallbackElement: <div className="flex justify-center my-30">
-          <span className="loading loading-spinner flex justify-center loading-xl"></span>
+          <span className="loading loading-spinner text-info flex justify-center  loading-xl"></span>
         </div>,
       },
       {
