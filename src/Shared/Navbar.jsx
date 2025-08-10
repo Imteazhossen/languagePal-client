@@ -31,7 +31,7 @@ const Navbar = () => {
               className="-ml-5 h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="black"
             >
               <path
                 strokeLinecap="round"
@@ -45,7 +45,7 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content z-10 mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
           >
-            <li>
+            <li className="text-sky-500">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -57,7 +57,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li>
+            <li className="text-sky-500">
               <NavLink
                 to="/find-tutors"
                 className={({ isActive }) =>
@@ -70,7 +70,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             
-            <li>
+            <li className="text-sky-500">
               <NavLink
                 to="/add-tutorial"
                 className={({ isActive }) =>
@@ -82,7 +82,7 @@ const Navbar = () => {
                 Add Tutorials
               </NavLink>
             </li>
-            <li>
+            <li className="text-sky-500">
               <NavLink
                 to="/FAQ"
                 className={({ isActive }) =>
@@ -94,7 +94,7 @@ const Navbar = () => {
                 FAQ
               </NavLink>
             </li>
-            <li>
+            <li className="text-sky-500">
               <NavLink
                 to="/about-us"
                 className={({ isActive }) =>
@@ -108,7 +108,7 @@ const Navbar = () => {
             </li>
 
             {user &&
-              <li>
+              <li className="text-sky-500">
                 <NavLink
                   to="/my-tutorials"
                   className={({ isActive }) =>
@@ -124,7 +124,7 @@ const Navbar = () => {
 
 
             {user &&
-              <li>
+              <li className="text-sky-500">
                 <NavLink
                   to="/my-booked-tutors"
                   className={({ isActive }) =>
@@ -134,7 +134,7 @@ const Navbar = () => {
                   }
                 >
                   My Booked Tutors
-                </NavLink>y
+                </NavLink>
               </li>
             }
 
@@ -146,8 +146,8 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
+        <ul className="menu menu-horizontal text-sky-500 px-1">
+          <li className="text-sky-500">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -159,7 +159,7 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-          <li>
+          <li className="text-sky-500">
             <NavLink
               to="/find-tutors"
               className={({ isActive }) =>
@@ -171,7 +171,7 @@ const Navbar = () => {
               Find Tutors
             </NavLink>
           </li>
-          <li>
+          <li className="text-sky-500">
             <NavLink
               to="/add-tutorial"
               className={({ isActive }) =>
@@ -183,7 +183,7 @@ const Navbar = () => {
               Add Tutorials
             </NavLink>
           </li>
-          <li>
+          <li className="text-sky-500">
             <NavLink
               to="/FAQ"
               className={({ isActive }) =>
@@ -195,7 +195,7 @@ const Navbar = () => {
               FAQ
             </NavLink>
           </li>
-          <li>
+          <li className="text-sky-500">
               <NavLink
                 to="/about-us"
                 className={({ isActive }) =>
@@ -207,7 +207,7 @@ const Navbar = () => {
                 About Us
               </NavLink>
             </li>
-          <li>
+          <li className="text-sky-500">
             {user &&
               <NavLink
                 to="/my-tutorials"
@@ -222,7 +222,7 @@ const Navbar = () => {
             }
 
           </li>
-          <li>
+          <li className="text-sky-500">
             {user &&
               <NavLink
                 to="/my-booked-tutors"
