@@ -8,7 +8,7 @@ const FindTutorCategory = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:3000/tutors')
+        fetch('https://language-exchange-server-plum.vercel.app/tutors')
             .then((res) => res.json())
             .then((data) => {
                 const filtered = data.filter(

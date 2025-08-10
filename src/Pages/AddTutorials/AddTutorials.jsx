@@ -24,7 +24,7 @@ const AddTutorials = () => {
         // console.log(tutorialData);
 
 
-          fetch('http://localhost:3000/tutorials', {
+          fetch('https://language-exchange-server-plum.vercel.app/tutorials', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(tutorialData),

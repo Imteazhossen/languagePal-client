@@ -27,7 +27,7 @@ const UpdateTutorial = () => {
         // console.log(tutorialData);
 
 
-        fetch(`http://localhost:3000/tutorials/${_id}`, {
+        fetch(`https://language-exchange-server-plum.vercel.app/tutorials/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

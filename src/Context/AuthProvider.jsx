@@ -21,7 +21,7 @@ const AuthProvider = ({ children }) => {
             setUser(currentUser);
         //   if ( currentUser?.email){
         //     const userData = { email: currentUser.email};
-        //     axios.post('http://localhost:3000/jwt', userData)
+        //     axios.post('https://language-exchange-server-plum.vercel.app/jwt', userData)
         //     .then(res => {
         //         console.log('token after jwt', res.data);
         //         const token = res.data.token;

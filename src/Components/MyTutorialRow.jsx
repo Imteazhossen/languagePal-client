@@ -24,7 +24,7 @@ const MyTutorialRow = ({ t , ftutorials, setTutorials }) => {
                 //start deleting the tutorial
 
 
-                fetch(`http://localhost:3000/tutorials/${_id}`, {
+                fetch(`https://language-exchange-server-plum.vercel.app/tutorials/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

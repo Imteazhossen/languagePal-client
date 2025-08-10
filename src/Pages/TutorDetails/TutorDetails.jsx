@@ -44,7 +44,7 @@ const TutorDetails = () => {
             rating
         };
 
-        fetch('http://localhost:3000/booked-tutors', {
+        fetch('https://language-exchange-server-plum.vercel.app/booked-tutors', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(bookedTutor),

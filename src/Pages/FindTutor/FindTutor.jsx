@@ -7,7 +7,7 @@ const FindTutor = () => {
 
   // 🔹 Fetch *all* tutors once on mount
   useEffect(() => {
-    fetch('http://localhost:3000/tutors')
+    fetch('https://language-exchange-server-plum.vercel.app/tutors')
       .then((res) => res.json())
       .then(setTutors)
       .catch(console.error);
@@ -17,13 +17,13 @@ const FindTutor = () => {
   useEffect(() => {
     if (search.trim() === '') {
       // If search box is cleared, show *all* tutors again
-      fetch('http://localhost:3000/tutors')
+      fetch('https://language-exchange-server-plum.vercel.app/tutors')
         .then((res) => res.json())
         .then(setTutors)
         .catch(console.error);
     } else {
       fetch(
-        `http://localhost:3000/tutors?searchParams=${encodeURIComponent(
+        `https://language-exchange-server-plum.vercel.app/tutors?searchParams=${encodeURIComponent(
           search
         )}`
       )

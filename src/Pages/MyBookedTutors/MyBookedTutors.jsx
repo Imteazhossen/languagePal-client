@@ -20,13 +20,13 @@ const MyBookedTutors = () => {
 
   const handleReview = (id, index) => {
   
-  fetch(`http://localhost:3000/booked-tutor/${id}`, { method: 'PUT' })
+  fetch(`https://language-exchange-server-plum.vercel.app/booked-tutor/${id}`, { method: 'PUT' })
     .then((res) => {
       if (!res.ok) {
         throw new Error('Server error');
       }
      
-      return fetch(`http://localhost:3000/booked-tutor/${id}`);
+      return fetch(`https://language-exchange-server-plum.vercel.app/booked-tutor/${id}`);
     })
     .then((res) => res.json())           
     .then((updatedDoc) => {

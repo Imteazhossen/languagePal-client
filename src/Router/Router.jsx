@@ -13,6 +13,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import PrivetRoute from "../Routes/PrivetRoute";
 import UpdateTutorial from "../Pages/MyTutorials/UpdateTutorial";
 import CategoryTutors from "../Pages/CategoryTutors/CategoryTutors";
+import FAQ from "../Pages/FAQ/FAQ";
 
 
 const router = createBrowserRouter([
@@ -44,34 +45,41 @@ const router = createBrowserRouter([
       {
         path: '/find-tutors',
         Component: FindTutor,
+        hydrateFallbackElement: <div className="flex justify-center my-30">
+          <span className="loading loading-spinner flex justify-center loading-xl"></span>
+        </div>,
       },
       {
         path: '/find-tutors/:category',
         Component: FindTutorCategory
       },
       {
+        path: '/FAQ',
+        Component: FAQ
+      },
+      {
         path: '/tutor-details/:id',
-        element: <PrivetRoute><TutorDetails></TutorDetails></PrivetRoute>,
-        loader: () => fetch("http://localhost:3000/tutors").then((res) => res.json()),
+        element: <TutorDetails></TutorDetails>,
+        loader: () => fetch("https://language-exchange-server-plum.vercel.app/tutors").then((res) => res.json()),
       },
       {
         path: '/add-tutorial',
-        element: <PrivetRoute><AddTutorials></AddTutorials></PrivetRoute>
+        element: <AddTutorials></AddTutorials>
       },
       {
         path: '/my-tutorials',
-        element: <PrivetRoute><MyTutorials></MyTutorials></PrivetRoute>,
-        loader: () => fetch("http://localhost:3000/tutorials").then((res) => res.json())
+        element: <MyTutorials></MyTutorials>,
+        loader: () => fetch("https://language-exchange-server-plum.vercel.app/tutorials").then((res) => res.json())
       },
       {
         path: '/my-booked-tutors',
         element: <PrivetRoute><MyBookedTutors></MyBookedTutors></PrivetRoute>,
-        loader: () => fetch("http://localhost:3000/booked-tutors").then((res) => res.json()),
+        loader: () => fetch("https://language-exchange-server-plum.vercel.app/booked-tutors").then((res) => res.json()),
       },
       {
         path: '/updateTutorial/:id',
         element: <PrivetRoute><UpdateTutorial></UpdateTutorial></PrivetRoute>,
-        loader: ({ params }) => fetch(`http://localhost:3000/tutorials/${params.id}`).then((res) => res.json()),
+        loader: ({ params }) => fetch(`https://language-exchange-server-plum.vercel.app/tutorials/${params.id}`).then((res) => res.json()),
       },
 
     ]
