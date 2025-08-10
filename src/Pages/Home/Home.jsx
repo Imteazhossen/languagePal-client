@@ -33,13 +33,13 @@ const Home = () => {
                     <div className="hero-content text-neutral-content text-center">
                         <div className="">
                             <h1 className="mb-5 text-5xl md:text-7xl text-sky-500  font-bold">LanguagePal</h1>
-                            <p className="mb-5 text-lg md:text-xl">
+                            <p className="mb-5 text-lg w-2xl md:text-xl">
                                 Learning new languages opens the door to understanding different cultures and broadens your communication skills. It also boosts cognitive abilities, memory, and confidence in real-world interactions.
 
                             </p>
                             <Link to='/register'> <button className="btn bg-sky-500 font-bold text-white mx-2">Get Started</button></Link>
 
-                            <button className="btn bg-emerald-500 font-bold text-white mx-2">Get Started</button>
+                            {/* <button className="btn bg-emerald-500 font-bold text-white mx-2">Get Started</button> */}
                         </div>
                     </div>
                 </div>

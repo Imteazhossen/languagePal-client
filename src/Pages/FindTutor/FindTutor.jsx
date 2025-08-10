@@ -62,7 +62,11 @@ const FindTutor = () => {
       {/* tutors grid */}
       <div className="grid gap-5 mb-15 px-5 md:px-15 grid-cols-1 md:grid-cols-2">
         {tutors.length === 0 ? (
-          <p className="text-center col-span-full">No tutors found.</p>
+          <div className="flex flex-col col-span-full space-y-5 justify-center items-center">
+            <span className="loading loading-spinner text-info "></span>
+             <p className="text-center ">Find your subject teacher </p>
+             </div>
+         
         ) : (
           tutors.map((t) => <TutorCard key={t._id} tutor={t} />)
         )}
