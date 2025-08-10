@@ -14,6 +14,7 @@ import german from '../../assets/countries/german.png'
 import japan from '../../assets/countries/japan.png'
 import learning1 from '../../assets/extraSection/learning1.jpg'
 import learning2 from '../../assets/extraSection/learning2.jpg'
+import Reviews from '../../Components/Reviews';
 
 
 const Home = () => {
@@ -272,9 +273,11 @@ const Home = () => {
                         className="mx-auto h-auto rounded-lg w-full max-w-[450px] object-cover"
                     />
                 </div>
+            </div>
 
-
-
+            {/* reviews */}
+            <div className=''>
+                <Reviews></Reviews>
             </div>
 
 
