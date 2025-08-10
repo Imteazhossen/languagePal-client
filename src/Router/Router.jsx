@@ -14,6 +14,7 @@ import PrivetRoute from "../Routes/PrivetRoute";
 import UpdateTutorial from "../Pages/MyTutorials/UpdateTutorial";
 import CategoryTutors from "../Pages/CategoryTutors/CategoryTutors";
 import FAQ from "../Pages/FAQ/FAQ";
+import AboutUs from "../Pages/About Us/AboutUs";
 
 
 const router = createBrowserRouter([
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: '/FAQ',
         Component: FAQ
+      },
+       {
+        path: '/about-us',
+        Component: AboutUs
       },
       {
         path: '/tutor-details/:id',

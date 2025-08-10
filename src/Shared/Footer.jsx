@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaAmericanSignLanguageInterpreting, FaFacebookSquare, FaGithubSquare, FaInstagramSquare } from 'react-icons/fa';
 import { NavLink } from 'react-router';
+import { AuthContext } from '../Context/AuthContext/AuthContext';
 
 
 const Footer = () => {
+
+    const { user } = useContext(AuthContext)
     return (
         <footer className="footer sm:footer-horizontal bg-emerald-50 text-base-content p-10">
             <aside>
@@ -21,8 +24,15 @@ const Footer = () => {
                 <NavLink to='/' className={({ isActive }) => isActive ? 'border-b-4 border-sky-500 font-bold' : 'text-gray-500 font-bold'}>Home</NavLink>
                 <NavLink to='/find-tutors' className={({ isActive }) => isActive ? 'border-b-4 border-sky-500 font-bold' : 'text-gray-500 font-bold'}>Find Tutors</NavLink>
                 <NavLink to='/add-tutorial' className={({ isActive }) => isActive ? 'border-b-4 border-sky-500 font-bold' : 'text-gray-500 font-bold'}>Add Tutorials</NavLink>
-                <NavLink to='/my-tutorials' className={({ isActive }) => isActive ? 'border-b-4 border-sky-500 font-bold' : 'text-gray-500 font-bold'}>My Tutorials</NavLink>
-                <NavLink to='/my-booked-tutors' className={({ isActive }) => isActive ? 'border-b-4 border-sky-500 font-bold' : 'text-gray-500 font-bold'}>My Booked Tutors</NavLink>
+                {user &&
+                    <NavLink to='/my-tutorials' className={({ isActive }) => isActive ? 'border-b-4 border-sky-500 font-bold' : 'text-gray-500 font-bold'}>My Tutorials</NavLink>
+                }
+                {
+                    user &&
+                    <NavLink to='/my-booked-tutors' className={({ isActive }) => isActive ? 'border-b-4 border-sky-500 font-bold' : 'text-gray-500 font-bold'}>My Booked Tutors</NavLink>
+                }
+                <NavLink to='/FAQ' className={({ isActive }) => isActive ? 'border-b-4 border-sky-500 font-bold' : 'text-gray-500 font-bold'}>FAQ</NavLink>
+                <NavLink to='/about-us' className={({ isActive }) => isActive ? 'border-b-4 border-sky-500 font-bold' : 'text-gray-500 font-bold'}>About Us</NavLink>
             </nav>
             <nav>
                 <h6 className="footer-title text-sky-500">User Access</h6>

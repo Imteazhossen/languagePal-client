@@ -260,7 +260,11 @@ const Home = () => {
 
 
                     </p>
-                    <button className="btn bg-emerald-500 text-white w-max">Purchase</button>
+                    <Link to='/find-tutors'>
+                       <button className="btn bg-emerald-500 hover:scale-110 font-bold text-white mx-2 transition ease-in-out duration-300">
+                               Explore
+                            </button>
+                    </Link>
                 </div>
                 <div className="w-full lg:w-1/2">
                     <img

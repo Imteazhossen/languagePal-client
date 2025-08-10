@@ -69,6 +69,7 @@ const Navbar = () => {
                 Find Tutors
               </NavLink>
             </li>
+            
             <li>
               <NavLink
                 to="/add-tutorial"
@@ -91,6 +92,18 @@ const Navbar = () => {
                 }
               >
                 FAQ
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about-us"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'border-b-4 border-sky-500 font-bold'
+                    : 'text-gray-500 font-bold'
+                }
+              >
+               About Us
               </NavLink>
             </li>
 
@@ -182,6 +195,18 @@ const Navbar = () => {
               FAQ
             </NavLink>
           </li>
+          <li>
+              <NavLink
+                to="/about-us"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'border-b-4 border-sky-500 font-bold'
+                    : 'text-gray-500 font-bold'
+                }
+              >
+                About Us
+              </NavLink>
+            </li>
           <li>
             {user &&
               <NavLink
