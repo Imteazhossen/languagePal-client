@@ -103,7 +103,7 @@ export default function Reviews() {
         {/* Text block */}
         <div className="bg-sky-50 h-[330px] rounded-3xl flex items-center justify-center p-6 shadow-lg">
           <h1 className="font-bold text-sky-500 text-3xl lg:text-3xl leading-snug">
-            Know about what our users, find out what they say.
+            Know about what our users, find out what they say. Slide to see reviews.
           </h1>
         </div>
 

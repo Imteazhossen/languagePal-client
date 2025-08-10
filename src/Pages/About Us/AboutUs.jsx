@@ -10,7 +10,7 @@ const AboutUs = () => {
         </h1>
 
         {/* Introduction */}
-        <p className="text-lg mb-12 leading-relaxed max-w-3xl">
+        <p className="text-emerald-700 mb-12 leading-relaxed max-w-3xl">
           LanguagePal is dedicated to bridging cultures and empowering learners worldwide to master new languages through innovative technology and community support.
         </p>
 

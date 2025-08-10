@@ -56,8 +56,8 @@ export default function FAQ() {
       {/* Title */}
       <div className="text-center mb-10">
         <h2 className="text-4xl font-extrabold text-emerald-700 flex justify-center items-center gap-3">
-          <FaQuestionCircle className="text-emerald-500 text-4xl" />
-          Frequently Asked Questions
+          <FaQuestionCircle className="text-emerald-500 hidden sm:block text-4xl" />
+           Frequently Asked Questions
         </h2>
         <p className="mt-3 text-emerald-600 text-lg">
           Your guide to mastering languages, answers from experience and research.

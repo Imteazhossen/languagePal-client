@@ -35,7 +35,7 @@ const FindTutor = () => {
 
   return (
     <div>
-      <h2 className="md:text-6xl text-4xl font-bold text-sky-500 text-center my-10">
+      <h2 className="md:text-4xl text-3xl font-bold text-sky-500 text-center my-10">
         Find Your Desired Tutors
       </h2>
 
